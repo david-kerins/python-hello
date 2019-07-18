@@ -12,6 +12,15 @@ module.exports = (settings)=>{
   var objects = []
 
   // The deployment of your cool app goes here ▼▼▼
+   objects.push(...oc.processDeploymentTemplate(`${templatesLocalBaseUrl}/python-deploy.yaml`, {
+    'param':{
+      'NAME': phases[phase].name,
+      'SUFFIX': phases[phase].suffix,
+      'VERSION': phases[phase].tag,
+      'HOST': `${phases[phase].name}${phases[phase].suffix}-${phases[phase].namespace}.ocp.bitbox.ca`
+    }
+  }))
+
 
   oc.applyRecommendedLabels(objects, phases[phase].name, phase, `${changeId}`, phases[phase].instance)
   oc.importImageStreams(objects, phases[phase].tag, phases.build.namespace, phases.build.tag)
