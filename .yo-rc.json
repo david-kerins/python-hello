@@ -44,7 +44,7 @@
           },
           "jenkinsJobName": "_jenkins",
           "github_owner": "david-kerins",
-          "github_repo": "python-hello/",
+          "github_repo": "python-hello",
           "jenkinsFilePath": ".jenkins/Jenkinsfile",
           "uuid": "3747e975-0dcc-4e65-9e7c-24066022756e"
         }

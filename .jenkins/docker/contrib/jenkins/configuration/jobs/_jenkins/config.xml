@@ -32,7 +32,7 @@
           <id>3747e975-0dcc-4e65-9e7c-24066022756e</id>
           <credentialsId>github-account</credentialsId>
           <repoOwner>david-kerins</repoOwner>
-          <repository>python-hello/</repository>
+          <repository>python-hello</repository>
           <traits>
             <org.jenkinsci.plugins.github__branch__source.ForkPullRequestDiscoveryTrait>
               <strategyId>2</strategyId>
