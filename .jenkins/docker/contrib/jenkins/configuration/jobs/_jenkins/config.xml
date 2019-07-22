@@ -29,7 +29,7 @@
     <data>
       <jenkins.branch.BranchSource>
         <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@2.3.6">
-          <id>64682cd1-5845-4496-8959-53a55cb82f79</id>
+          <id>3747e975-0dcc-4e65-9e7c-24066022756e</id>
           <credentialsId>github-account</credentialsId>
           <repoOwner>david-kerins</repoOwner>
           <repository>python-hello</repository>
