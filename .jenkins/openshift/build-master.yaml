@@ -39,6 +39,8 @@ objects:
       git:
         ref: ${SOURCE_REPOSITORY_REF}
         uri: ${SOURCE_REPOSITORY_URL}
+      sourceSecret:
+        name: template.jenkins-github
       type: Git
     strategy:
       dockerStrategy:
